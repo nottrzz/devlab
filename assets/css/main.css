@@ -2757,11 +2757,11 @@ span {
 }
 
 .header-logo img{
-  width: 170px;
+  width: 250px;
   margin-top: 1rem;
 }
 .header-logo-2 img{
-  width: 170px;
+  width: 250px;
   margin-top: 1rem;
 }
 .header-1 .header-right .sidebar__toggle {
@@ -3424,205 +3424,9 @@ span {
   top: 100px;
 }
 
-.hero-1 {
-  padding: 190px 0 0;
-  position: relative;
-}
-.hero-1 .mike-shape {
-  position: absolute;
-  top: 20%;
-  left: 20px;
-}
-.hero-1 .mike-shape::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  width: 232px;
-  height: 232px;
-  background: linear-gradient(180deg, rgba(102, 166, 255, 0.5) -128.88%, rgba(255, 255, 255, 0) 83.84%);
-  border-radius: 50%;
-  top: 83%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-}
-.hero-1 .mike-shape img {
-  animation: bounce-x 7s infinite linear;
-}
-.hero-1 .arrow-shape {
-  position: absolute;
-  bottom: 5%;
-  left: 3%;
-  animation: moving 7s infinite linear;
-}
-.hero-1 .energy-shape {
-  position: absolute;
-  right: 40px;
-  top: 15%;
-}
-.hero-1 .arrow-shape-2 {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  animation: moving 7s infinite linear;
-}
-.hero-1 .rocket-shape {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 7;
-}
-.hero-1 .rocket-shape::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  width: 232px;
-  height: 232px;
-  background: linear-gradient(180deg, rgba(102, 166, 255, 0.5) -128.88%, rgba(255, 255, 255, 0) 83.84%);
-  border-radius: 50%;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.hero-1 .container-fluid {
-  padding: 0 141px;
-}
-@media (max-width: 1600px) {
-  .hero-1 .container-fluid {
-    padding: 0 50px;
-  }
-}
-@media (max-width: 1399px) {
-  .hero-1 .container-fluid {
-    padding: 0 40px;
-  }
-}
-@media (max-width: 1199px) {
-  .hero-1 .container-fluid {
-    padding: 0 30px;
-  }
-}
-.hero-1 .hero-title {
-  text-align: center;
-  position: relative;
-  z-index: 9;
-  margin-bottom: 50px;
-}
-@media (max-width: 1199px) {
-  .hero-1 .hero-title img {
-    width: 100%;
-    height: 100%;
-  }
-}
-.hero-1 .hero-content {
-  position: relative;
-  z-index: 9;
-}
-.hero-1 .hero-content span {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--white);
-  display: inline-block;
-  margin-bottom: 10px;
-}
-.hero-1 .hero-content h1 {
-  color: var(--white);
-  margin-bottom: 20px;
-}
-.hero-1 .hero-content p {
-  color: var(--white);
-  max-width: 510px;
-}
-.hero-1 .hero-image {
-  position: relative;
-  z-index: 8;
-  margin-left: -70px;
-}
-@media (max-width: 1399px) {
-  .hero-1 .hero-image {
-    margin-left: 0;
-  }
-  .hero-1 .hero-image img {
-    width: 100%;
-    height: 100%;
-  }
-}
-.hero-1 .hero-image .bg-shape {
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.hero-1 .video-btn {
-  position: relative;
-  z-index: 9;
-  display: inline-block;
-  width: 151px;
-  height: 151px;
-  border: 0.5px solid var(--white);
-  background: radial-gradient(157.24% 123.22% at 47.19% -0.63%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
-  backdrop-filter: blur(25px);
-  border-radius: 50%;
-  text-align: center;
-  line-height: 151px;
-  font-size: 24px;
-  color: var(--white);
-}
-.hero-1 .video-btn img {
-  animation: cir36 10s linear infinite;
-  position: absolute;
-  top: 12px;
-  left: 10px;
-}
-@media (max-width: 1199px) {
-  .hero-1 .video-right {
-    margin-bottom: 60px;
-  }
-}
-.hero-1 .video-right p {
-  font-weight: 500;
-  font-style: italic;
-  text-transform: capitalize;
-  line-height: 175%;
-  color: var(--white);
-  margin-top: 30px;
-}
-.hero-1 .video-right .client-items {
-  margin-top: 30px;
-  position: relative;
-  z-index: 9;
-}
-.hero-1 .video-right .client-items .client-img {
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.hero-1 .video-right .client-items .client-img .star-icon .star {
-  font-size: 14px;
-  color: #FBB03B;
-}
-.hero-1 .video-right .client-items .client-img .star-icon span {
-  color: var(--white);
-  font-size: 14px;
-  line-height: 1;
-}
 
 .hero-2 {
-  padding: 150px 0 200px;
+  padding: 150px 0 220px;
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3705,7 +3509,7 @@ span {
   z-index: 9;
 }
 .hero-2 .hero-content h6 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -3714,7 +3518,7 @@ span {
   margin-bottom: 10px;
 }
 .hero-2 .hero-content h1 {
-  font-size: 72px;
+  font-size: 62px;
   color: var(--white);
 }
 @media (max-width: 575px) {
