@@ -96,7 +96,22 @@
             color: #1a1a1a !important; 
             font-size: 24px !important;
         }
+        
     }
+
+
+    @media (max-width: 767px) {
+    .header-logo img {
+        width: 400px !important; 
+        height: auto !important;
+        max-width: 100% !important;
+    }
+    
+    /* Menyeimbangkan posisi vertikal container logo di mobile jika terlalu mepet */
+    .header-main .logo {
+        padding: 10px 0; 
+    }
+}
     </style>
 </head>
 <body>
@@ -131,21 +146,16 @@
         <div class="offcanvas__wrapper">
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                    <div class="offcanvas__logo">
-                        <a href="index.html">
-                            <img src="assets/img/logo/ldl-logo-black.png" style="max-width: 180px; width: 100%; height: auto;" alt="Lombok Devlab Digital Agency">
-                        </a>
-                    </div>
+                  
                     <div class="offcanvas__close"><button><i class="fas fa-times"></i></button></div>
                 </div>
-                <p class="text d-none d-xl-block">Lombok Devlab siap membantu bisnis Anda tumbuh secara digital melalui pembuatan website berstandar global dan solusi teknologi modern terintegrasi.</p>
                 <div class="mobile-menu fix mb-3"></div>
                 <div class="offcanvas__contact">
                     <h4>Info Kontak</h4>
                     <ul>
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon"><i class="fal fa-map-marker-alt"></i></div>
-                            <div class="offcanvas__contact-text"><a target="_blank" href="https://maps.google.com/?q=Mataram+Pringgabaya+NTB">Mataram - Pringgabaya, NTB, Indonesia</a></div>
+                            <div class="offcanvas__contact-text"><a target="_blank" href="https://maps.app.goo.gl/cxtEDFqrJVQ4kTCD9">- Pringgabaya, NTB, Indonesia</a></div>
                         </li>
                         <li class="d-flex align-items-center">
                             <div class="offcanvas__contact-icon mr-15"><i class="fal fa-envelope"></i></div>
@@ -172,6 +182,7 @@
         </div>
     </div>
 </div>
+<div class="offcanvas__overlay"></div>
 
 <header id="header-sticky" class="header-1">
     <div class="container">
@@ -179,10 +190,10 @@
             <div class="header-main">
                 <div class="logo">
                     <a href="index.html" class="header-logo">
-                        <img src="assets/img/logo/ldl-logo-white.png" style="max-width: 270px; height: auto;" alt="Lombok Devlab Light Logo">
+                        <img src="assets/img/logo/ldl-logo-white.png"  alt="Lombok Devlab Light Logo">
                     </a>
                     <a href="index.html" class="header-logo-2">
-                        <img src="assets/img/logo/ldl-logo-black.png" style="max-width: 270px; height: auto;" alt="Lombok Devlab Dark Logo">
+                        <img src="assets/img/logo/ldl-logo-black.png" style="max-width: 280px; height: auto;" alt="Lombok Devlab Dark Logo">
                     </a>
                 </div>
                 <div class="mean__menu-wrapper">
@@ -199,7 +210,6 @@
                                         <li><a href="jasa-pembuatan-landing-page.html">Landing Page</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="projects.html">Portofolio</a></li>
                                 <li><a href="artikel.html">Artikel</a></li>
                                 <li><a href="contact.html">Kontak</a></li>
                             </ul>
@@ -370,7 +380,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="main-button wow fadeInUp" data-wow-delay=".5s"><a href="team.html"><span class="theme-btn">MEET OUR TEAM / KENALI TIM</span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a></div>
+                        <!-- <div class="main-button wow fadeInUp" data-wow-delay=".5s"><a href="team.html"><span class="theme-btn">MEET OUR TEAM / KENALI TIM</span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a></div> -->
                     </div>
                 </div>
             </div>
@@ -405,14 +415,82 @@
                 <div class="sub-title wow fadeInUp"><span>OUR EXPERTS / TIM AHLI</span></div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">Experts in Digital Solutions, <br> Ready to Build Your Website</h2>
             </div>
-            <div class="main-button wow fadeInUp" data-wow-delay=".5s"><a href="team.html"><span class="theme-btn">VIEW ALL / LIHAT SEMUA</span><span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span></a></div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s"><div class="team-card-items"><div class="team-image"><img src="assets/img/team/002.png" alt="Rosi Zamhari - Lead Developer & Founder Lombok Devlab"></div><div class="team-content"><h3><a href="team-details.html">Rosi Zamhari</a></h3><p>Lead Web Developer & Founder</p></div><div class="icon-shape"><img src="assets/img/team/icon-shape.png" alt="img"><div class="social-profile"><ul><li><a href="#"><i class="fab fa-instagram"></i></a></li><li><a href="#"><i class="fab fa-facebook-f"></i></a></li><li><a href="#"><i class="fa-brands fa-twitter"></i></a></li><li><a href="#"><i class="fab fa-linkedin-in"></i></a></li></ul><span class="plus-btn"><i class="fas fa-share-alt"></i></span></div></div></div></div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="team-card-items">
+                    <div class="team-image">
+                          <img src="assets/img/team/002.png" alt="Rosi Zamhari - Lead Developer & Founder Lombok Devlab">
+                    </div>
+                    <div class="team-content">
+                        <h3>
+                            <a href="team-details.html">Rosi Zamhari</a>
+                        </h3>
+                        <p>Lead Web Developer & Founder</p>
+                    </div>
+                    <div class="icon-shape">
+                          <img src="assets/img/team/icon-shape.png" alt="img">
+                        <div class="social-profile">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                            <span class="plus-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="team-card-items">
+                    <div class="team-image">
+                          <img src="assets/img/team/002.png" alt="Rosi Zamhari - Lead Developer & Founder Lombok Devlab">
+                    </div>
+                    <div class="team-content">
+                        <h3>
+                            <a href="team-details.html">Rosi Zamhari</a>
+                        </h3>
+                        <p>Lead Web Developer & Founder</p>
+                    </div>
+                    <div class="icon-shape">
+                          <img src="assets/img/team/icon-shape.png" alt="img">
+                        <div class="social-profile">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                            <span class="plus-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </span>
+                    </div>
+                </div>
+            </div>
+            </div>
             
-            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s"><div class="team-card-items"><div class="team-image"><img src="assets/img/team/04.jpg" alt="Lina Safitri - UI/UX Designer Lombok Devlab"></div><div class="team-content"><h3><a href="team-details.html">Lina Safitri</a></h3><p>UI/UX Product Designer</p></div><div class="icon-shape"><img src="assets/img/team/icon-shape.png" alt="img"><div class="social-profile"><ul><li><a href="#"><i class="fab fa-instagram"></i></a></li><li><a href="#"><i class="fab fa-facebook-f"></i></a></li><li><a href="#"><i class="fa-brands fa-twitter"></i></a></li><li><a href="#"><i class="fab fa-linkedin-in"></i></a></li></ul><span class="plus-btn"><i class="fas fa-share-alt"></i></span></div></div></div></div>
+            <!-- <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s"><div class="team-card-items"><div class="team-image"><img src="assets/img/team/04.jpg" alt="Lina Safitri - UI/UX Designer Lombok Devlab"></div><div class="team-content"><h3><a href="team-details.html">Lina Safitri</a></h3><p>UI/UX Product Designer</p></div><div class="icon-shape"><img src="assets/img/team/icon-shape.png" alt="img"><div class="social-profile"><ul><li><a href="#"><i class="fab fa-instagram"></i></a></li><li><a href="#"><i class="fab fa-facebook-f"></i></a></li><li><a href="#"><i class="fa-brands fa-twitter"></i></a></li><li><a href="#"><i class="fab fa-linkedin-in"></i></a></li></ul><span class="plus-btn"><i class="fas fa-share-alt"></i></span></div></div></div></div> -->
             
             <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s"><div class="team-card-items"><div class="team-image"><img src="assets/img/team/03.jpg" alt="Andi Wijaya - Backend Engineer Lombok Devlab"></div><div class="team-content"><h3><a href="team-details.html">Andi Wijaya</a></h3><p>Senior Backend Engineer</p></div><div class="icon-shape"><img src="assets/img/team/icon-shape.png" alt="img"><div class="social-profile"><ul><li><a href="#"><i class="fab fa-instagram"></i></a></li><li><a href="#"><i class="fab fa-facebook-f"></i></a></li><li><a href="#"><i class="fa-brands fa-twitter"></i></a></li><li><a href="#"><i class="fab fa-linkedin-in"></i></a></li></ul><span class="plus-btn"><i class="fas fa-share-alt"></i></span></div></div></div></div>
             
