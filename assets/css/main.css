@@ -4752,7 +4752,7 @@ span {
 }
 .preloader .animation-preloader .txt-loading .letters-loading::before {
   animation: letters-loading 4s infinite;
-  color: var(--header);
+  color: var(--border);
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
@@ -4785,7 +4785,7 @@ span {
   padding: 0px;
 }
 .preloader .loader .loader-section .bg {
-  background-color: var(--bg);
+  background-color: var(--theme2);
   height: 100%;
   left: 0;
   width: 100%;
